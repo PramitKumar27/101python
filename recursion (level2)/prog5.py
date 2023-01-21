@@ -2,11 +2,11 @@ n = int(input("Enter n: "))
 
 
 def decToBin(a):
-    if a == 0:
-        return 0
-    else:
-        return decToBin(a//2)
-        print(a % 2)
+    if a >= 1:
+        decToBin(a//2)
+        b = a % 2
+        if b is not None:
+            print(b, end="")
 
 
 print(decToBin(n))
