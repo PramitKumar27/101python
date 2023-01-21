@@ -9,4 +9,4 @@ def decToBin(a):
             print(b, end="")
 
 
-print(decToBin(n))
+decToBin(n)
